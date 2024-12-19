@@ -11,6 +11,9 @@ from django.contrib import messages
 def home(request):
     return render(request,'home.html')
 
+def base(Request):
+    return render(Request,'base.html')
+
 def signup_view(request):
     if request.method == "POST":
         form = UserCreationForm(request.POST)
